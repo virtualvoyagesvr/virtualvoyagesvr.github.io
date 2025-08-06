@@ -47,22 +47,22 @@
       padding: 1rem;
     }
     .cta {
-  width: 100vw;              /* Full viewport width */
-  position: relative;        /* To contain the background */
-  left: 50%;                /* Trick to center the full width */
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  background-color: var(--accent-color);
-  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
-  background-repeat: repeat;
-  background-size: contain;
-  color: white;
-  padding: 2rem 1rem;
-  text-align: center;
-  margin: 2rem 0;
-  box-sizing: border-box;
-}
+      position: relative;
+      width: 100vw;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background-color: var(--accent-color);
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      background-repeat: repeat;
+      background-size: contain;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-sizing: border-box;
+      z-index: 1;
+    }
     .cta a {
       color: white;
       font-weight: bold;
@@ -204,10 +204,10 @@
     <img src="group-session.jpg" alt="Group VR session with seniors" class="responsive">
   </section>
 
-  <section class="cta">
+  <div class="cta">
     <h2>Ready to Take Your Residents on a Virtual Adventure?</h2>
     <p><a href="#contact">Contact us to schedule a demo!</a></p>
-  </section>
+  </div>
 
   <section id="pricing">
     <h2>Pricing</h2>
