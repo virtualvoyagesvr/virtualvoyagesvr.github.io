@@ -47,12 +47,22 @@
       padding: 1rem;
     }
     .cta {
-      background-color: var(--accent-color);
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-      margin: 2rem 0;
-    }
+  width: 100vw;              /* Full viewport width */
+  position: relative;        /* To contain the background */
+  left: 50%;                /* Trick to center the full width */
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: var(--accent-color);
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-repeat: repeat;
+  background-size: contain;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: 2rem 0;
+  box-sizing: border-box;
+}
     .cta a {
       color: white;
       font-weight: bold;
